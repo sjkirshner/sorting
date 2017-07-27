@@ -16,7 +16,7 @@ describe('Bubble Sort', function(){
   })
 
   it('handles array length of lots', function(){
-    expect( bubbleSort([2,1,4,3,7,1,5]) ).toEqual([1,2,3,4,5,7,1]);
+    expect( bubbleSort([5,4,3,2,1]) ).toEqual([1,2,3,4,5]);
   })
 
     it('handles array length of lots with double char num', function(){

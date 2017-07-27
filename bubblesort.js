@@ -1,12 +1,14 @@
 function bubbleSort(array){
-  var swapCheck = false;
-  for( ){
-    for(var i = 0; i < array.length-1; i++){
-      if (!comparison(array[i],array[i+1])){
-        var newArray = swap(array[i],array[i+1]);
-        array[i] = newArray[0];
-        array[i+1] = newArray[1];
-        swapCheck = true;
+
+  var length = array.length;
+
+  for (var i = 0; i < length; i++) {
+    for (var j = 0; j < (length-i-1); j++){
+      if (!comparison(array[j],array[j+1])){
+        var newArray = swap(array[j],array[j+1]);
+        array[j] = newArray[0];
+        array[j+1] = newArray[1];
+
       }
     }
   }
